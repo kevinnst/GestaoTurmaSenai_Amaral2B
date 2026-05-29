@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "cores.css";
+
+@font-face {
+    font-family: dynamix;
+    src: url(fonts/dynamix/Dynamix.ttf) format('truetype');
+
+}
+
+body {
+    color: aliceblue;
+    font-family: dynamix;
+    background-color: blue;
+}
+h1,p{
+    text-align: center;
+}
