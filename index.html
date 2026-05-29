@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <img src="img/Smallville.webp" alt="S" >
+    <img src="img/Smallville.webp" alt="S">
     <title>Gestão de Turma</title>
 
 </head>
@@ -47,13 +47,11 @@
                 <header>
                     <h2>LELLIS ITO - A </h2>
                 </header>
-                <div>
-                    <ul class="lista-alunos lellis" id="alunoslellisItoA">
-                        <li>Maísa</li>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul>
-                </div>
+                <ul class="lista-alunos lellis" id="alunoslellisItoA">
+                    <li>Maísa</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
                 <footer>
                     <div> Quantidades de Alunos:
                         <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
@@ -61,68 +59,76 @@
                 </footer>
             </section>
         </section>
-        </div>
+
         <section headingoffset="2">
             <section>
                 <header>
                     <h2>LELLIS ITO - B </h2>
                 </header>
-                <div>
-                    <ul class="lista-alunos lellis" id="alunoslellisItoB">
-                        <li>Maísa</li>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul>
-                </div>
+                <ul class="lista-alunos lellis" id="alunoslellisItoB">
+                    <li>Maísa</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
                 <footer>
                     <div> Quantidades de Alunos:
                         <p id="qtdAlunosLellisItoB"><mark>0</mark></p>
                     </div>
                 </footer>
             </section>
-        </section>
-        </div>
-        <section headingoffset="3">
-            <section>
-                <header>
-                    <h2>Amaral - A </h2>
-                </header>
-                <div>
+            <section headingoffset="3">
+                <section>
+                    <header>
+                        <h2>Amaral - A </h2>
+                    </header>
                     <ul class="lista-alunos lellis" id="alunoslellisItoA">
                         <li>Maísa</li>
                         <li>...</li>
                         <li>...</li>
                     </ul>
-                </div>
-                <footer>
-                    <div> Quantidades de Alunos:
-                        <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
-                    </div>
-                </footer>
-            </section>
-        </section>
-        </div>
-        <section headingoffset="4">
-            <section>
-                <header>
-                    <h2>Amaral - B </h2>
-                </header>
-                <div>
-                    <ul class="lista-alunos lellis" id="alunoslellisItoA">
-                        <li>Maísa</li>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul>
-                </div>
-                <footer>
-                    <div> Quantidades de Alunos:
-                        <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
-                    </div>
-                </footer>
-            </section>
-        </section>
-        </div>
+                    <footer>
+                        <div> Quantidades de Alunos:
+                            <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
 
+                        </div>
+                    </footer>
+                </section>
+            </section>
+
+            <section headingoffset="4">
+                <section>
+                    <header>
+                        <h2>Amaral - B </h2>
+                    </header>
+                    <ul class="lista-alunos lellis" id="alunoslellisItoA">
+                        <li>Maísa</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+                    </div>
+                    <footer>
+                        <div> Quantidades de Alunos:
+                            <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
+                        </div>
+                    </footer>
+                </section>
+            </section>
+            <footer>
+                <h3>Copyright &copy; 2024 - Todos os direitos reservados.</h3>
+            </footer>
+            <script>
+                function contarQuantidadeAlunosTurma(lista, qtde) {
+                    const listaAlunos = document.getElementById(lista);
+                    const quantidade = listaAlunos.querySelectorAll('li').length;
+                    document.getElementById(qtde).textContent = quantidade;
+                }
+                contarQuantidadeAlunosTurma("alunoslellisItoA", "qtdAlunosLellisItoA");
+                contarQuantidadeAlunosTurma("alunoslellisItoB", "qtdAlunosLellisItoB");
+
+                contarQuantidadeAlunosTurma("alunoslellisAmaralA", "qtdAlunosLellisAmaralA");
+                contarQuantidadeAlunosTurma("alunoslellisAmaralB", "qtdAlunosLellisAmaralB");
+
+            </script>
 </body>
 
 </html>
