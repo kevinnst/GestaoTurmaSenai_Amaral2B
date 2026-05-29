@@ -3,16 +3,20 @@
 @import "cores.css";
 
 @font-face {
-    font-family: dynamix;
-    src: url(fonts/dynamix/Dynamix.ttf) format('truetype');
+    font-family: dragon;
+    src: url(fonts/dragon/Dragon\ Ball.ttf) format('truetype');
 
 }
 
 body {
     color: aliceblue;
-    font-family: dynamix;
-    background-color: blue;
+    font-family: dragon;
+    background-color: rgb(22, 20, 20);
 }
 h1,p{
     text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(163, 5, 5);
 }
